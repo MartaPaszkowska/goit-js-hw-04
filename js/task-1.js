@@ -5,7 +5,7 @@ function isEnoughCapacity(products, containerSize) {
 	for (const value of values) {
 		total += value;
 	}
-	const canItGo = total < containerSize;
+	const canItGo = total <= containerSize;
 	return canItGo;
 }
 
